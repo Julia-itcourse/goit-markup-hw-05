@@ -546,8 +546,24 @@ button:focus {
   background-image: url(../images/portfolio-card-bg.jpg);
   width: calc((100% - 30px * 2) / 3);
 }
+
 .portfolio-thumb {
   position: relative;
+}
+.overlay-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+
+  padding: 63px 24px;
+
+  opacity: 0;
+  color: var(--secondary-text-color);
 }
 .portfolio-thumb::before {
   content: "";
@@ -565,6 +581,9 @@ button:focus {
 }
 
 .portfolio-thumb:hover::before {
+  opacity: 1;
+}
+.portfolio-thumb:hover .overlay-text {
   opacity: 1;
 }
 .filter-element:not(:last-child) {
@@ -608,7 +627,7 @@ button:focus {
 
 .visually-hidden {
   position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0 !important;
   border: 0 !important;

@@ -57,6 +57,26 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+.site-nav .link {
+  position: relative;
+}
+.site-nav .link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background: var(--accent-color);
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+
+  opacity: 0;
+}
+.site-nav .link:target {
+  color: var(--accent-color);
+}
+.site-nav .link:target::after {
+  opacity: 1;
+}
 .contacts .link {
   align-items: center;
 }

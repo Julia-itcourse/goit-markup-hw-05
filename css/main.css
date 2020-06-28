@@ -5,6 +5,7 @@
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --overlay-color: rgba(47, 48, 58, 0.8);
+  --secondary-overlay-color: rgba(33, 150, 243, 0.9);
   --footer-background-color: #2f303a;
   --accent-color: #2196f3;
   --icon-color: #afb1b8;
@@ -368,6 +369,7 @@ button:focus {
 
   width: calc((100% - 30px * 2) / 3);
 }
+
 .what-we-do__element:not(:last-child) {
   margin-right: 30px;
 }
@@ -542,10 +544,28 @@ button:focus {
 }
 .portfolio-element {
   background-image: url(../images/portfolio-card-bg.jpg);
+  width: calc((100% - 30px * 2) / 3);
+}
+.portfolio-thumb {
+  position: relative;
+}
+.portfolio-thumb::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-overlay-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 .portfolio-element:hover {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-thumb:hover::before {
+  opacity: 1;
 }
 .filter-element:not(:last-child) {
   margin-right: 8px;
@@ -559,9 +579,7 @@ button:focus {
   display: flex;
   flex-wrap: wrap;
 }
-.portfolio-element {
-  width: calc((100% - 30px * 2) / 3);
-}
+
 .portfolio-element:not(:nth-child(3n)) {
   margin-right: 30px;
 }

@@ -4,6 +4,7 @@
   --secondary-text-color: #ffffff;
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
+  --overlay-color: rgba(47, 48, 58, 0.8);
   --footer-background-color: #2f303a;
   --accent-color: #2196f3;
   --icon-color: #afb1b8;
@@ -334,6 +335,14 @@ button:focus {
 /* What we do */
 
 .what-we-do .title {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+
   color: var(--secondary-text-color);
 
   margin-top: 0;
@@ -345,8 +354,8 @@ button:focus {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  background-image: url(..image/bg.svg);
-  background-color: var(--title-text-color);
+
+  background-color: var(--overlay-color);
 }
 /* to remove bg color */
 
@@ -355,6 +364,8 @@ button:focus {
   flex-wrap: wrap;
 }
 .what-we-do__element {
+  position: relative;
+
   width: calc((100% - 30px * 2) / 3);
 }
 .what-we-do__element:not(:last-child) {

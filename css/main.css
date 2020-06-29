@@ -63,7 +63,7 @@ header {
 
 /* TO CHANGE CURRENT PAGE PSEUDO ELEMENT - START*/
 
-.site-nav-link::after {
+/* .site-nav-link::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -71,15 +71,15 @@ header {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-
+  color: var(--accent-color);
   opacity: 0;
-}
-.site-nav-link:active {
+} */
+/* .site-nav-link:active {
   color: var(--accent-color);
 }
 .site-nav-link:active::after {
   opacity: 1;
-}
+} */
 
 /* #studio::after,
 #portfolio::after {
@@ -121,6 +121,7 @@ header {
 /* TO CHANGE CURRENT PAGE PSEUDO ELEMENT - END*/
 .contacts .link {
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts .link:hover .mail-icon {
   fill: var(--accent-color);
@@ -141,6 +142,7 @@ header {
 }
 .footer .logo {
   color: var(--secondary-text-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo > span {
   color: var(--accent-color);
@@ -191,6 +193,8 @@ header {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link {
@@ -284,6 +288,8 @@ header {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   text-align: center;
 }
@@ -514,6 +520,8 @@ button:focus {
   color: var(--icon-color);
 
   background-color: var(--primary-background-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover {
   color: #ffffff;
@@ -552,9 +560,12 @@ button:focus {
 
   width: 170px;
   height: 90px;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-icon {
   fill: var(--icon-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 #logo-1 {
   width: 45px;
@@ -607,6 +618,7 @@ button:focus {
 .portfolio-element {
   background-image: url(../images/portfolio-card-bg.jpg);
   width: calc((100% - 30px * 2) / 3);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-thumb {
@@ -626,6 +638,8 @@ button:focus {
 
   opacity: 0;
   color: var(--secondary-text-color);
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-thumb::before {
   content: "";
@@ -636,6 +650,8 @@ button:focus {
   top: 0;
   left: 0;
   opacity: 0;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-element:hover {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -727,6 +743,8 @@ button:focus {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
   color: var(--secondary-text-color);
@@ -772,7 +790,9 @@ address .physical-address {
   color: var(--secondary-text-color);
   margin-bottom: 9px;
 }
-
+.footer__contact-link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .footer__contact-link:hover {
   color: var(--accent-color);
 }
@@ -801,6 +821,8 @@ address .physical-address {
   border-radius: 50%;
   color: #afb1b8;
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer .link:hover {
   color: #ffffff;
@@ -835,6 +857,7 @@ address .physical-address {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__contact-item:not(:last-child) {

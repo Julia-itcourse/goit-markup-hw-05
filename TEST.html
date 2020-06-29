@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <style>
+      #current{
+          color: palevioletred;
+      }
+      #current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background: palevioletred;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  opacity: 1;
+      }
+  </style>
+ <body>
+    <header>
+      <!-- Contains logo, main navigation and contact links. In HW2 included link into logo as said in video -->
+      <div class="container main-nav">
+        <nav class="main-nav__list list">
+          <a href="./index.html" class="logo"><span>Web</span> Studio</a>
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="./index.html#studio" class="site-nav-link link" id="current"
+                >Студия</a
+              >
+            </li>
+            <li class="item">
+              <a href="./portfolio.html#portfolio" class="site-nav-link link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="item">
+              <a href="" class="site-nav-link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+    </body>

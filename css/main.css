@@ -913,3 +913,9 @@ address .physical-address {
 .primary-button:hover .button-icon {
   fill: var(--accent-color);
 }
+
+.button--with-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}

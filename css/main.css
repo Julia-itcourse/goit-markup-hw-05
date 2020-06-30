@@ -10,6 +10,7 @@
   --accent-color: #2196f3;
   --icon-color: #afb1b8;
   --footer-secondary-bakground-color: rgba(255, 255, 255, 0.1);
+  --border-color: #eeeeee;
 }
 
 body {
@@ -288,9 +289,6 @@ header {
 }
 
 .primary-button {
-  /* display: inline-flex;
-  align-items: center; */
-
   min-width: 200px;
   border: none;
   border-radius: 4px;
@@ -635,7 +633,8 @@ button:focus {
   justify-content: center;
 }
 .portfolio-element {
-  background-image: url(../images/portfolio-card-bg.jpg);
+  border: 1px solid var(--border-color);
+  /* background-image: url(../images/portfolio-card-bg.jpg); */
   width: calc((100% - 30px * 2) / 3);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -643,6 +642,7 @@ button:focus {
 .portfolio-wrap {
   position: relative;
   overflow: hidden;
+  margin: 0;
 }
 .overlay-text {
   position: absolute;
@@ -724,8 +724,7 @@ button:focus {
   margin-bottom: 0;
 }
 .portfolio .image {
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .visually-hidden {

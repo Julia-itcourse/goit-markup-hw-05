@@ -684,7 +684,7 @@ button:focus {
 /* .portfolio-wrap:hover::before {
   opacity: 1;
 } */
-.portfolio-wrap:hover .overlay-text {
+.portfolio-element:hover .overlay-text {
   transform: translateY(0);
   opacity: 1;
 }

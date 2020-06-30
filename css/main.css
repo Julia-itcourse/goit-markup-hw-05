@@ -11,6 +11,7 @@
   --icon-color: #afb1b8;
   --footer-secondary-bakground-color: rgba(255, 255, 255, 0.1);
   --border-color: #eeeeee;
+  --primary-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -135,7 +136,7 @@ header {
 /* TO CHANGE CURRENT PAGE PSEUDO ELEMENT - END*/
 .contacts .link {
   align-items: center;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--primary-transition);
 }
 .contacts .link:hover .mail-icon {
   fill: var(--accent-color);
@@ -153,6 +154,8 @@ header {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  transition: var(--primary-transition);
 }
 .footer .logo {
   color: var(--secondary-text-color);
@@ -185,7 +188,7 @@ header {
   fill: var(--primary-text-color);
   margin-right: 10px;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--primary-transition);
 }
 .phone-icon {
   width: 10px;
@@ -193,7 +196,7 @@ header {
   fill: var(--primary-text-color);
   margin-right: 10px;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--primary-transition);
 }
 
 .site-nav .item:not(:last-child) {
@@ -212,7 +215,7 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--primary-transition);
 }
 
 .site-nav .link {
@@ -304,7 +307,7 @@ header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--primary-transition);
 
   text-align: center;
 }
@@ -496,7 +499,7 @@ button:focus {
   height: 20px;
   fill: currentColor;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--primary-transition);
 }
 .name {
   margin-top: 30px;
@@ -538,7 +541,7 @@ button:focus {
 
   background-color: var(--primary-background-color);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--primary-transition);
 }
 .social-link:hover {
   color: #ffffff;
@@ -578,11 +581,11 @@ button:focus {
   width: 170px;
   height: 90px;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--primary-transition);
 }
 .client-icon {
   fill: var(--icon-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--primary-transition);
 }
 #logo-1 {
   width: 45px;
@@ -619,9 +622,9 @@ button:focus {
   padding-top: 94px;
 }
 
-.portfolio-text {
+/* .portfolio-text {
   padding: 0px 24px 20px;
-}
+} */
 .portfolio .list {
   margin-top: 0;
   margin-bottom: 0;
@@ -636,13 +639,16 @@ button:focus {
   border: 1px solid var(--border-color);
   /* background-image: url(../images/portfolio-card-bg.jpg); */
   width: calc((100% - 30px * 2) / 3);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--primary-transition);
 }
 
 .portfolio-wrap {
   position: relative;
   overflow: hidden;
   margin: 0;
+}
+.portfolio-text-wrap {
+  padding: 20px 24px;
 }
 .overlay-text {
   position: absolute;
@@ -717,7 +723,6 @@ button:focus {
   color: var(--title-text-color);
   margin-top: 0;
   margin-bottom: 4px;
-  padding-left: 24px;
 }
 .portfolio p {
   margin-top: 0;
@@ -768,7 +773,7 @@ button:focus {
   border-radius: 4px;
   cursor: pointer;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--primary-transition);
 }
 .button:hover {
   color: var(--secondary-text-color);
@@ -815,7 +820,7 @@ address .physical-address {
   margin-bottom: 9px;
 }
 .footer__contact-link {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--primary-transition);
 }
 .footer__contact-link:hover {
   color: var(--accent-color);
@@ -846,7 +851,7 @@ address .physical-address {
   color: #afb1b8;
   background-color: rgba(255, 255, 255, 0.1);
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--primary-transition);
 }
 .footer .link:hover {
   color: #ffffff;
@@ -883,7 +888,7 @@ address .physical-address {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--primary-transition);
 }
 
 .footer__contact-item:not(:last-child) {
@@ -895,18 +900,16 @@ address .physical-address {
 }
 .social-icon--white {
   fill: var(--secondary-text-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--primary-transition);
 }
 
 .button-icon {
   width: 24px;
   height: 24px;
+  margin-left: 10px;
   fill: var(--secondary-text-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--primary-transition);
 }
 .primary-button:hover .button-icon {
   fill: var(--accent-color);
-}
-.button-text {
-  margin-right: 10px;
 }

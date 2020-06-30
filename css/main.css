@@ -288,8 +288,8 @@ header {
 }
 
 .primary-button {
-  display: inline-flex;
-  align-items: center;
+  /* display: inline-flex;
+  align-items: center; */
 
   min-width: 200px;
   border: none;

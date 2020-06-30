@@ -183,12 +183,16 @@ header {
   height: 12px;
   fill: var(--primary-text-color);
   margin-right: 10px;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .phone-icon {
   width: 10px;
   height: 15px;
   fill: var(--primary-text-color);
   margin-right: 10px;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .item:not(:last-child) {
@@ -238,9 +242,9 @@ header {
   color: var(--primary-text-color);
 }
 
-.auth-icon {
+/* .auth-icon {
   fill: currentColor;
-}
+} */
 
 /* Hero banner styles */
 .hero {
@@ -493,6 +497,7 @@ button:focus {
   width: 20px;
   height: 20px;
   fill: currentColor;
+
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .name {
@@ -637,6 +642,7 @@ button:focus {
 
 .portfolio-thumb {
   position: relative;
+  overflow: hidden;
 }
 .overlay-text {
   position: absolute;
@@ -853,6 +859,8 @@ address .physical-address {
 
   text-align: center;
   fill: currentColor;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container .copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -887,12 +895,14 @@ address .physical-address {
 }
 .social-icon--white {
   fill: var(--secondary-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-icon {
   width: 24px;
   height: 24px;
   fill: var(--secondary-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .primary-button:hover .button-icon {
   fill: var(--accent-color);
